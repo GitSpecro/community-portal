@@ -11,9 +11,9 @@
 
   <!-- Will be dynamic later -->
   <ul>
-    <li>Team Member 1</li>
-    <li>Team Member 2</li>
-    <li>Team Member 3</li>
+  <% team.forEach(member => { %>
+    <li><strong><%= member.name %></strong> - <%= member.role %></li>
+  <% }) %>
   </ul>
 
   <%- include('footer') %>

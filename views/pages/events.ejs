@@ -8,10 +8,18 @@
 
   <h1>Community Events</h1>
 
-  <!-- Events will be rendered from an array -->
-  <div>
+  <% if (events.length > 0) { %>
+  <% events.forEach(event => { %>
+    <div style="margin-bottom: 20px;">
+      <h2><%= event.title %></h2>
+      <p><strong>Date:</strong> <%= event.date %></p>
+      <p><strong>Location:</strong> <%= event.location %></p>
+      <img src="<%= event.image %>" alt="<%= event.title %>" width="300">
+    </div>
+  <% }) %>
+  <% } else { %>
     <p>No events available.</p>
-  </div>
+  <% } %>
 
   <%- include('footer') %>
 </body>
