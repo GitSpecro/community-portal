@@ -31,6 +31,8 @@ const team = [
   { name: "Tshiamo", role: "Data Manager" }
 ];
 
+const contacts = []; // Will hold submitted contact form data
+
 router.get('/', (req, res) => {
     res.render('pages/home');
 });
@@ -45,6 +47,18 @@ router.get('/events', (req, res) => {
 
 router.get('/contact', (req, res) => {
     res.render('pages/contact');
+});
+
+router.post('/contact', (req, res) => {
+  const { name, email, message } = req.body;
+
+  console.log("Contact form submitted:");
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+
+  // For now, we just redirect to thank you
+  res.redirect('/thankyou');
 });
 
 router.get('/thankyou', (req, res) => {
