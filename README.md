@@ -26,3 +26,4 @@ This is a dynamic community portal web application built using Node.js, Express.
 
 1. Run `npm install` to install dependencies.
 2. Use `npm run dev` to start the development server with nodemon.
+3. Use `npm start` to start the development server without nodemon.
