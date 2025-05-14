@@ -1,25 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Contact Us</title>
-</head>
-<body>
-  <%- include('header') %>
+<%- include('header') %>
 
-  <h1>Contact Us</h1>
-  <form action="/contact" method="POST">
-    <label>Name:</label><br>
-    <input type="text" name="name" required><br><br>
+<!-- Contact Section -->
+<section class="py-5" style="background-color: #F9F4EF;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-4" style="color: #FF595E;">Get In Touch</h2>
+        <p class="text-center text-muted">Have a question, idea, or want to volunteer? We'd love to hear from you!</p>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+        <form method="POST" action="/contact" class="mt-4">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
 
-    <label>Message:</label><br>
-    <textarea name="message" required></textarea><br><br>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
 
-    <button type="submit">Send</button>
-  </form>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          </div>
 
-  <%- include('footer') %>
-</body>
-</html>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-lg" style="background-color: #8AC6D0; color: #2B2B2B;">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('footer') %>

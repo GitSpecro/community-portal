@@ -2,32 +2,48 @@ const data =
 {
     // events array
     events: [
-    {
-        title: "Community Cleanup",
-        date: "2025-06-01",
-        location: "Local Park",
-        image: "/images/cleanup.jpg"
-    },
-    {
-        title: "Tech Talk: Node.js Basics",
-        date: "2025-06-10",
-        location: "Community Center",
-        image: "/images/techtalk.jpg"
-    },
-    {
-        title: "Community BBQ",
-        date: "2025-06-15",
-        location: "Block B Courtyard",
-        image: "/images/bbq.jpg"
-    }
+        {
+            title: "Community Cleanup",
+            date: "July 1",
+            description: "Experience live performances from up-and-coming indie bands.",
+            image: "/images/Community Cleanup.png"
+        },
+        {
+            title: "Tech Talk",
+            date: "June 10",
+            description: "Dive into the world of coding and innovation with industry experts.",
+            image: "/images/Techtalk.png"
+        },
+        {
+            title: "Community BBQ",
+            date: "June 15",
+            description: "Unleash your creativity in our hands-on art session for all skill levels.",
+            image: "/images/Community BBQ.png"
+        }
     ],
 
     // team array
     team: [
-    { name: "Arno", role: "Team Lead" },
-    { name: "Nokwanda", role: "Frontend Developer" },
-    { name: "Thiko", role: "Backend Developer" },
-    { name: "Tshiamo", role: "Data Manager" }
+        {
+            name: "Thikho Fortune Bongwe",
+            role: "Creative Director",
+            image: "/images/Thikho.png"
+        },
+        {
+            name: "Arno Vlok",
+            role: "Technical Lead",
+            image: "/images/Arno.png"
+        },
+        {
+            name: "Tshiamo Nthite",
+            role: "Operations & Logistics",
+            image: "/images/Tshiamo.png"
+        },
+        {
+            name: "Nokwanda Legoabe",
+            role: "Community Engagement",
+            image: "/images/Nokwanda.png"
+        }
     ],
     
     contacts: [] // Will hold submitted contact form data

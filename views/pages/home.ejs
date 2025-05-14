@@ -1,19 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Home</title>
-</head>
-<body>
-  <%- include('header') %>
+<%- include('header') %>
 
-  <h1>Welcome to the Community Portal</h1>
-  <p>Upcoming events:</p>
+<!-- Hero Section -->
+<section class="py-5" style="background-color: #FF595E;">
+  <div class="container text-center text-white">
+    <h1 class="display-4 fw-bold" style="color: ghostwhite;">Where Creativity Meets Community</h1>
+    <p class="lead">Empowering youth through art, music, and technology.</p>
+    <a href="/events" class="btn btn-lg mt-3" style="background-color: #8AC6D0; color: #2B2B2B;">
+      View Upcoming Events
+    </a>
+  </div>
+</section>
 
-  <!-- Placeholder for dynamic events later -->
-  <ul>
-    <li>No events yet.</li>
-  </ul>
+<!-- Highlights Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #3D348B;">🎨 Art</h5>
+            <p class="card-text">Workshops, graffiti, digital illustration, and creative showcases led by local artists.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #3D348B;">🎵 Music</h5>
+            <p class="card-text">Open mics, jam sessions, beat-making labs, and opportunities for young talent to shine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #3D348B;">💡 Tech & STEM</h5>
+            <p class="card-text">Code camps, robotics, gaming design, and mentorship for future-ready innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <%- include('footer') %>
-</body>
-</html>
+<!-- Call to Action -->
+<section class="py-5" style="background-color: #F9F4EF;">
+  <div class="container text-center">
+    <h2 style="color: #FF595E;">Ready to Create with Us?</h2>
+    <p class="mb-4">Join the Creative Grounds movement and bring your passion to life.</p>
+    <a href="/contact" class="btn btn-lg" style="background-color: #3D348B; color: white;">
+    Get Involved</a>
+  </div>
+</section>
+
+<%- include('footer') %>

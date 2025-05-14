@@ -1,21 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>About</title>
-</head>
-<body>
-  <%- include('header') %>
+<%- include('header') %>
 
-  <h1>About Us</h1>
-  <p>Meet our team:</p>
+<!-- Hero Banner -->
+<section class="py-5" style="background-color: #FF595E;">
+  <div class="container text-center text-white">
+    <h1 class="fw-bold" style="color: white;">About Creative Grounds</h1>
+    <p class="lead mt-2">
+      A space where youth find their voice through art, music, and the power of collaboration.
+    </p>
+  </div>
+</section>
 
-  <!-- Will be dynamic later -->
-  <ul>
-  <% team.forEach(member => { %>
-    <li><strong><%= member.name %></strong> - <%= member.role %></li>
-  <% }) %>
-  </ul>
+<!-- Story & Vision -->
+<section class="py-5" style="background-color: #F9F4EF;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h2 style="color: #3D348B;">Our Story</h2>
+        <p class="text-muted mt-3">
+          Creative Grounds began as a small vision to create more than just events. We dreamed of building safe spaces —
+          vibrant, expressive spaces — where young people could unleash their creative potential, connect deeply, and gain direction.
+          Through every paint stroke, every beat dropped, and every tech breakthrough, our events became healing grounds.
+        </p>
+        <p class="text-muted">
+          We believe that creativity is not a luxury — it's a lifeline. For the dreamer who doesn’t know where to start,
+          for the artist who hasn’t found their voice, and for the youth who needs encouragement — Creative Grounds is home.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <%- include('footer') %>
-</body>
-</html>
+<!-- Mission Section -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 style="color: #FF595E;">Our Mission</h2>
+    <p class="text-muted mt-3">
+      To ignite purpose and possibility in young people by providing spaces where they can explore, express, and evolve through creative disciplines.
+      We aim to host events that offer not just exposure — but encouragement, mentorship, direction, and a sense of belonging.
+      We hope each Creative Grounds experience becomes a launchpad for goals, healing, growth, and lifelong community.
+    </p>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5" style="background-color: #F9F4EF;">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #3D348B;">Meet the Team</h2>
+    <div class="row">
+      <% team.forEach(member => { %>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <img src="<%= member.image %>" alt="<%= member.name %>" class="rounded-circle mb-3"
+                   style="width: 100px; height: 100px; object-fit: cover;">
+              <h5 class="card-title" style="color: #FF595E;"><%= member.name %></h5>
+              <p class="text-muted"><%= member.role %></p>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('footer') %>
