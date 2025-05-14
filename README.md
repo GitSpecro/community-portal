@@ -15,10 +15,10 @@ This is a dynamic community portal web application built using Node.js, Express.
 
 ## Team Members and Roles
 
-Arnoldus Christiaan Vlok (600871): Team Lead
-Nokwanda Legoabe (578051): Frontend Developer
-Thikho Fortune Bongwe (577145): Backend Developer
-Tshiamo Nthite (577690): Data Manager
+- Arnoldus Christiaan Vlok (600871): Team Lead
+- Nokwanda Legoabe (578051): Frontend Developer
+- Thikho Fortune Bongwe (577145): Backend Developer
+- Tshiamo Nthite (577690): Data Manager
 
 > Note: All members contributed to both frontend and backend tasks.
 
