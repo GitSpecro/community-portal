@@ -4,7 +4,7 @@ const data =
     events: [
         {
             title: "Community Cleanup",
-            date: "July 1",
+            date: "June 1",
             description: "Experience live performances from up-and-coming indie bands.",
             image: "/images/Community Cleanup.png"
         },
